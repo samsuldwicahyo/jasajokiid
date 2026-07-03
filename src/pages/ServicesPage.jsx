@@ -21,6 +21,7 @@ export default function ServicesPage() {
         description="Mulai dari pengembangan website dan aplikasi, desain visual, editing video, hingga pendampingan akademik yang berfokus pada arahan, struktur, dan support teknis."
         primaryAction={{ to: '/kontak', label: 'Konsultasi Sekarang' }}
         secondaryAction={{ to: '/harga', label: 'Lihat Sistem Harga' }}
+        highlights={['Website & Aplikasi', 'Dokumen Akademik', 'Desain & Multimedia']}
       />
       <Services />
       <FeaturedServices />

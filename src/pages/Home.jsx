@@ -11,6 +11,7 @@ import ProblemSection from '../components/ProblemSection';
 import SEO from '../components/SEO';
 import Services from '../components/Services';
 import Testimonials from '../components/Testimonials';
+import TrustStrip from '../components/TrustStrip';
 import WhyChooseUs from '../components/WhyChooseUs';
 
 const description =
@@ -27,16 +28,17 @@ export default function Home() {
         keywords={keywords}
       />
       <Hero />
+      <TrustStrip />
       <ProblemSection />
       <About />
       <Services />
       <FeaturedServices />
       <WhyChooseUs />
-      <HowToOrder />
+      <HowToOrder variant="preview" />
       <Pricing />
       <Portfolio />
       <Testimonials />
-      <FAQ />
+      <FAQ variant="preview" limit={4} />
       <ContactForm />
       <CTASection />
     </>

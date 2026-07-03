@@ -20,8 +20,9 @@ export default function HowToOrderPage() {
         description="Kamu bisa mulai dari konsultasi singkat, lalu kami bantu cek ruang lingkup, deadline, dan estimasi pengerjaan sebelum project berjalan."
         primaryAction={{ to: '/kontak', label: 'Mulai Konsultasi' }}
         secondaryAction={{ to: '/faq', label: 'Baca FAQ' }}
+        highlights={['Konsultasi Awal', 'Estimasi Transparan', 'Revisi Terarah']}
       />
-      <HowToOrder />
+      <HowToOrder variant="page" />
       <WhyChooseUs />
       <Testimonials />
       <CTASection />

@@ -13,10 +13,10 @@ export default function SectionHeader({
         : 'items-center text-center';
 
   return (
-    <div className={`mb-10 flex flex-col gap-4 sm:mb-12 ${alignment} ${className}`}>
+    <div className={`mb-10 flex flex-col gap-4 sm:mb-14 ${alignment} ${className}`}>
       {eyebrow ? <span className="eyebrow">{eyebrow}</span> : null}
       <div className="max-w-3xl">
-        <h2 className="text-balance text-3xl font-bold leading-tight text-brand-text sm:text-4xl lg:text-[2.7rem]">
+        <h2 className="text-balance text-3xl font-bold leading-tight text-brand-text sm:text-4xl lg:text-[2.9rem]">
           {title}
         </h2>
         {description ? (

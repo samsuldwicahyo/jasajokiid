@@ -28,15 +28,15 @@ import {
 export const heroBadges = [
   { label: 'Harga Bersaing', icon: Wallet },
   { label: 'Pengerjaan Rapi', icon: CheckCheck },
-  { label: 'Bisa Konsultasi Dulu', icon: MessageCircle },
+  { label: 'Konsultasi Gratis di Awal', icon: MessageCircle },
   { label: 'Revisi Sesuai Kesepakatan', icon: RefreshCw },
 ];
 
 export const heroStats = [
-  { value: '10+', label: 'Jenis Layanan' },
-  { value: '3 Langkah', label: 'Konsultasi Awal' },
-  { value: 'Fleksibel', label: 'Sesuai Deadline' },
-  { value: 'Digital & Akademik', label: 'Support Proyek' },
+  { value: '1000+', label: 'Proyek Selesai' },
+  { value: '500+', label: 'Klien Puas' },
+  { value: '99%', label: 'Tepat Waktu' },
+  { value: 'Fast Response', label: 'Konsultasi Awal' },
 ];
 
 export const audienceProblems = [

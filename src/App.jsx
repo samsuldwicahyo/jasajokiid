@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import { Route, Routes, useLocation } from 'react-router-dom';
 import Footer from './components/Footer';
 import FloatingWhatsApp from './components/FloatingWhatsApp';
+import MobileBottomNav from './components/MobileBottomNav';
 import Navbar from './components/Navbar';
 import ContactPage from './pages/ContactPage';
 import FAQPage from './pages/FAQPage';
@@ -44,7 +45,7 @@ export default function App() {
       </a>
       <ScrollManager />
       <Navbar />
-      <main id="main-content">
+      <main id="main-content" className="pb-24 md:pb-0">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/layanan" element={<ServicesPage />} />
@@ -56,6 +57,7 @@ export default function App() {
         </Routes>
       </main>
       <Footer />
+      <MobileBottomNav />
       <FloatingWhatsApp />
     </div>
   );

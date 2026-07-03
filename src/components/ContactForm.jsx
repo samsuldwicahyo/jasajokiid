@@ -54,7 +54,7 @@ export default function ContactForm() {
   return (
     <section id="kontak" className="section-anchor py-20 sm:py-24">
       <div className="section-shell">
-        <div className="grid gap-8 xl:grid-cols-[0.9fr_1.1fr]">
+        <div className="grid gap-8 xl:grid-cols-[0.88fr_1.12fr]">
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -63,8 +63,8 @@ export default function ContactForm() {
           >
             <SectionHeader
               eyebrow="Kontak"
-              title="Ceritakan kebutuhanmu, kami bantu cek arahan dan estimasinya"
-              description="Form ini tidak memakai backend. Setelah dikirim, kamu akan diarahkan langsung ke WhatsApp dengan format pesan yang sudah rapi."
+              title="Hubungi admin kami"
+              description="Pilih kanal komunikasi yang paling nyaman, atau isi form terstruktur agar kebutuhan bisa langsung dicek bersama tim JasaJoki.id."
               align="left"
             />
 
@@ -95,14 +95,22 @@ export default function ContactForm() {
                   komunikasi tetap profesional dan sesuai kebijakan layanan.
                 </p>
               </div>
-              <a
-                href={INSTAGRAM_URL}
-                target="_blank"
-                rel="noreferrer"
-                className="mt-4 inline-flex text-sm font-semibold text-white underline decoration-white/30 underline-offset-4"
-              >
-                Kunjungi Instagram {INSTAGRAM_HANDLE}
-              </a>
+              <div className="mt-5 grid gap-3 sm:grid-cols-2">
+                <a
+                  href={INSTAGRAM_URL}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center justify-center rounded-xl border border-white/15 px-4 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
+                >
+                  Instagram {INSTAGRAM_HANDLE}
+                </a>
+                <a
+                  href={`mailto:${CONTACT_EMAIL}`}
+                  className="inline-flex items-center justify-center rounded-xl border border-white/15 px-4 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
+                >
+                  Kirim Email
+                </a>
+              </div>
             </div>
           </motion.div>
 
@@ -113,6 +121,15 @@ export default function ContactForm() {
             transition={{ duration: 0.45 }}
             className="rounded-[2rem] border border-brand-border bg-white p-6 shadow-card sm:p-8"
           >
+            <div className="mb-6 rounded-[1.5rem] bg-slate-50 px-5 py-4">
+              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-brand-soft">
+                Form konsultasi
+              </p>
+              <p className="mt-2 text-sm leading-7 text-brand-soft">
+                Setelah submit, Anda akan diarahkan ke WhatsApp dengan format pesan yang sudah rapi.
+              </p>
+            </div>
+
             <form className="space-y-5" onSubmit={handleSubmit(onSubmit)}>
               <div className="grid gap-5 sm:grid-cols-2">
                 <div>

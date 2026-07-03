@@ -23,23 +23,27 @@ const legalLinks = ['Kebijakan Privasi', 'Syarat Layanan', 'Disclaimer'];
 
 export default function Footer() {
   return (
-    <footer className="border-t border-brand-border bg-white/90 py-14">
+    <footer className="border-t border-white/10 bg-brand-navy py-16 text-white">
       <div className="section-shell">
-        <div className="grid gap-10 lg:grid-cols-[1.15fr_0.85fr_0.7fr_0.9fr]">
+        <div className="grid gap-10 lg:grid-cols-[1.1fr_0.75fr_0.75fr_0.95fr]">
           <div>
-            <BrandLogo imageClassName="h-16 sm:h-[4.5rem]" />
-            <p className="mt-5 max-w-md text-sm leading-8 text-brand-soft">
-              Layanan bantuan digital dan pendampingan akademik yang membantu kebutuhan website,
-              aplikasi, desain, video, dokumen, dan proyek secara rapi, cepat, dan sesuai arahan.
+            <BrandLogo
+              imageClassName="h-16 sm:h-[4.5rem]"
+              showTagline
+              taglineClassName="text-slate-300"
+            />
+            <p className="mt-5 max-w-md text-sm leading-8 text-slate-300">
+              Layanan bantuan digital dan pendampingan akademik profesional untuk kebutuhan
+              website, aplikasi, desain, video, dokumen, dan support proyek yang lebih terarah.
             </p>
           </div>
 
           <div>
-            <h3 className="text-sm font-semibold uppercase tracking-[0.2em] text-brand-soft">Menu</h3>
+            <h3 className="text-sm font-semibold uppercase tracking-[0.2em] text-slate-400">Menu</h3>
             <ul className="mt-5 space-y-3 text-sm">
               {menuLinks.map((link) => (
                 <li key={link.to}>
-                  <Link className="text-brand-text transition hover:text-brand-blue" to={link.to}>
+                  <Link className="text-slate-300 transition hover:text-white" to={link.to}>
                     {link.label}
                   </Link>
                 </li>
@@ -48,10 +52,10 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="text-sm font-semibold uppercase tracking-[0.2em] text-brand-soft">
+            <h3 className="text-sm font-semibold uppercase tracking-[0.2em] text-slate-400">
               Layanan
             </h3>
-            <ul className="mt-5 space-y-3 text-sm text-brand-text">
+            <ul className="mt-5 space-y-3 text-sm text-slate-300">
               {serviceLinks.map((item) => (
                 <li key={item}>{item}</li>
               ))}
@@ -59,16 +63,16 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="text-sm font-semibold uppercase tracking-[0.2em] text-brand-soft">
+            <h3 className="text-sm font-semibold uppercase tracking-[0.2em] text-slate-400">
               Kontak
             </h3>
-            <ul className="mt-5 space-y-4 text-sm text-brand-text">
+            <ul className="mt-5 space-y-4 text-sm text-slate-300">
               <li>
                 <a
                   href={buildWhatsAppLink()}
                   target="_blank"
                   rel="noreferrer"
-                  className="inline-flex items-center gap-3 transition hover:text-brand-blue"
+                  className="inline-flex items-center gap-3 transition hover:text-white"
                 >
                   <MessageCircle className="h-4 w-4" aria-hidden="true" />
                   WhatsApp: {WHATSAPP_NUMBER}
@@ -79,14 +83,17 @@ export default function Footer() {
                   href={INSTAGRAM_URL}
                   target="_blank"
                   rel="noreferrer"
-                  className="inline-flex items-center gap-3 transition hover:text-brand-blue"
+                  className="inline-flex items-center gap-3 transition hover:text-white"
                 >
                   <Instagram className="h-4 w-4" aria-hidden="true" />
                   Instagram: {INSTAGRAM_HANDLE}
                 </a>
               </li>
               <li>
-                <a href={`mailto:${CONTACT_EMAIL}`} className="inline-flex items-center gap-3 transition hover:text-brand-blue">
+                <a
+                  href={`mailto:${CONTACT_EMAIL}`}
+                  className="inline-flex items-center gap-3 transition hover:text-white"
+                >
                   <Mail className="h-4 w-4" aria-hidden="true" />
                   Email: {CONTACT_EMAIL}
                 </a>
@@ -97,7 +104,7 @@ export default function Footer() {
 
         <div
           id="legal"
-          className="mt-12 flex flex-col gap-4 border-t border-brand-border pt-6 text-sm text-brand-soft lg:flex-row lg:items-center lg:justify-between"
+          className="mt-12 flex flex-col gap-4 border-t border-white/10 pt-6 text-sm text-slate-400 lg:flex-row lg:items-center lg:justify-between"
         >
           <div className="flex flex-wrap gap-4">
             {legalLinks.map((item) => (

@@ -10,7 +10,7 @@ export default function FloatingWhatsApp() {
       rel="noreferrer"
       whileHover={{ scale: 1.04, y: -2 }}
       whileTap={{ scale: 0.98 }}
-      className="group fixed bottom-4 right-4 z-40 inline-flex items-center gap-3 rounded-full bg-emerald-500 px-4 py-3 text-sm font-semibold text-white shadow-card sm:bottom-6 sm:right-6"
+      className="group fixed bottom-24 right-4 z-40 inline-flex items-center gap-3 rounded-full bg-emerald-500 px-4 py-3 text-sm font-semibold text-white shadow-card sm:bottom-24 sm:right-6 md:bottom-8"
       aria-label="Konsultasi via WhatsApp"
     >
       <MessageCircle className="h-5 w-5" aria-hidden="true" />

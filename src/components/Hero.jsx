@@ -12,8 +12,9 @@ import Button from './Button';
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden bg-hero-glow pt-32 pb-20 sm:pt-40 lg:pb-24">
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(14,165,233,0.08),transparent_32%)]" />
+    <section className="relative overflow-hidden pt-32 pb-20 sm:pt-40 lg:pb-24">
+      <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(239,244,255,0.9),rgba(248,250,252,0.96),rgba(255,255,255,1))]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(14,165,233,0.1),transparent_32%)]" />
       <div className="section-shell relative">
         <div className="grid items-center gap-12 lg:grid-cols-[1.05fr_0.95fr]">
           <motion.div
@@ -22,13 +23,13 @@ export default function Hero() {
             transition={{ duration: 0.55 }}
             className="text-center lg:text-left"
           >
-            <span className="eyebrow">JasaJoki.id</span>
+            <span className="eyebrow">Partner Akademik Premium</span>
             <h1 className="mt-6 text-balance text-4xl font-bold leading-tight text-brand-text sm:text-5xl lg:text-[3.65rem]">
               Solusi Bantuan Digital & Akademik Terpercaya
             </h1>
             <p className="mx-auto mt-6 max-w-2xl text-base leading-8 text-brand-soft sm:text-lg lg:mx-0">
-              JasaJoki.id membantu kebutuhan website, aplikasi, desain, video, dokumen akademik,
-              dan proyek digital secara rapi, cepat, fleksibel, dan sesuai arahan.
+              Tuntaskan kebutuhan website, aplikasi, desain, dokumen akademik, dan proyek digital
+              bersama tim yang komunikatif, terarah, dan fokus pada hasil yang rapi.
             </p>
 
             <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:justify-center lg:justify-start">
@@ -56,7 +57,7 @@ export default function Hero() {
               {heroStats.map((item) => (
                 <div
                   key={item.label}
-                  className="rounded-[1.4rem] border border-brand-border bg-white/80 p-4 shadow-sm"
+                  className="rounded-[1.4rem] border border-brand-border bg-white/85 p-4 shadow-sm"
                 >
                   <div className="text-lg font-bold text-brand-navy">{item.value}</div>
                   <div className="mt-1 text-sm leading-6 text-brand-soft">{item.label}</div>
@@ -100,7 +101,7 @@ export default function Hero() {
                     </div>
                     <div>
                       <div className="font-semibold">Website & Digital Support</div>
-                      <div className="text-sm text-slate-300">Rapi, cepat, dan sesuai arahan</div>
+                      <div className="text-sm text-slate-300">Rapi, fleksibel, dan sesuai brief</div>
                     </div>
                   </div>
                   <div className="mt-5 space-y-3">
@@ -168,7 +169,7 @@ export default function Hero() {
               <div className="mt-4 grid gap-4 sm:grid-cols-2">
                 <div className="rounded-[1.4rem] border border-brand-border bg-white p-5 shadow-sm">
                   <div className="text-sm font-semibold uppercase tracking-[0.2em] text-brand-blue">
-                    Dokumen
+                    Support
                   </div>
                   <div className="mt-2 text-lg font-bold text-brand-text">Editing & Formatting</div>
                   <p className="mt-2 text-sm leading-7 text-brand-soft">

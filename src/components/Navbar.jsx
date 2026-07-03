@@ -16,8 +16,8 @@ const navigation = [
 
 const navLinkClass = ({ isActive }) =>
   [
-    'rounded-full px-4 py-2 text-sm font-medium transition',
-    isActive ? 'bg-brand-navy text-white' : 'text-brand-text hover:bg-white/70',
+    'rounded-full px-4 py-2.5 text-sm font-semibold transition',
+    isActive ? 'bg-brand-navy text-white' : 'text-brand-soft hover:bg-slate-100 hover:text-brand-text',
   ].join(' ');
 
 function BrandMark() {
@@ -45,17 +45,15 @@ export default function Navbar() {
       initial={{ y: -24, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.4 }}
-      className="fixed inset-x-0 top-0 z-50"
+      className={[
+        'fixed inset-x-0 top-0 z-50 border-b transition duration-300',
+        isScrolled
+          ? 'border-brand-border bg-white/88 shadow-sm backdrop-blur-xl'
+          : 'border-transparent bg-white/72 backdrop-blur-md',
+      ].join(' ')}
     >
-      <div className="section-shell pt-4">
-        <div
-          className={[
-            'flex items-center justify-between rounded-[1.5rem] border px-4 py-3 transition duration-300 sm:px-5',
-            isScrolled
-              ? 'border-white/60 bg-white/[0.78] shadow-card backdrop-blur-xl'
-              : 'border-transparent bg-white/[0.45] backdrop-blur-lg',
-          ].join(' ')}
-        >
+      <div className="section-shell">
+        <div className="flex h-20 items-center justify-between gap-4">
           <BrandMark />
 
           <nav className="hidden items-center gap-2 lg:flex" aria-label="Navigasi utama">
@@ -67,8 +65,8 @@ export default function Navbar() {
           </nav>
 
           <div className="hidden lg:block">
-            <Button to="/kontak" size="sm" ariaLabel="Konsultasi">
-              Konsultasi
+            <Button to="/kontak" size="sm" className="rounded-full px-5" ariaLabel="Konsultasi gratis">
+              Konsultasi Gratis
             </Button>
           </div>
 
@@ -123,7 +121,7 @@ export default function Navbar() {
                     end={item.to === '/'}
                     className={({ isActive }) =>
                       [
-                        'rounded-2xl px-4 py-3 text-base font-medium transition',
+                        'rounded-2xl px-4 py-3 text-base font-semibold transition',
                         isActive
                           ? 'bg-brand-navy text-white'
                           : 'bg-slate-50 text-brand-text hover:bg-slate-100',
@@ -135,8 +133,8 @@ export default function Navbar() {
                 ))}
               </nav>
 
-              <Button to="/kontak" fullWidth ariaLabel="Konsultasi">
-                Konsultasi
+              <Button to="/kontak" fullWidth className="rounded-full" ariaLabel="Konsultasi gratis">
+                Konsultasi Gratis
               </Button>
             </motion.div>
           </motion.div>

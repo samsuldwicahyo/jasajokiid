@@ -4,16 +4,12 @@ import { Link } from 'react-router-dom';
 const MotionLink = motion(Link);
 
 const variants = {
-  primary:
-    'bg-brand-navy text-white shadow-glow hover:bg-brand-navy/95',
-  secondary:
-    'bg-brand-blue text-white shadow-card hover:bg-sky-500',
+  primary: 'bg-brand-navy text-white shadow-card hover:bg-brand-navy/95',
+  secondary: 'bg-brand-blue text-white shadow-card hover:bg-sky-500',
   outline:
-    'border border-brand-border bg-white text-brand-text hover:border-brand-blue hover:text-brand-blue',
-  ghost:
-    'bg-white/10 text-white backdrop-blur hover:bg-white/20',
-  light:
-    'bg-white text-brand-navy hover:bg-slate-100',
+    'border border-brand-border bg-white text-brand-text hover:border-brand-navy hover:text-brand-navy',
+  ghost: 'bg-transparent text-brand-text hover:bg-white/70',
+  light: 'bg-white text-brand-navy shadow-card hover:bg-slate-100',
 };
 
 const sizes = {
@@ -48,7 +44,7 @@ export default function Button({
   ...props
 }) {
   const classes = joinClasses(
-    'inline-flex items-center justify-center gap-2 rounded-full font-semibold transition duration-200',
+    'inline-flex items-center justify-center gap-2 rounded-xl font-semibold tracking-[-0.01em] transition duration-200',
     variants[variant],
     sizes[size],
     fullWidth ? 'w-full' : '',

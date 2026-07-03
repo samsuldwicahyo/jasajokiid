@@ -10,8 +10,8 @@ export default function FeaturedServices() {
       <div className="section-shell">
         <SectionHeader
           eyebrow="Layanan Prioritas"
-          title="Fokus Layanan Utama"
-          description="Beberapa layanan berikut menjadi fokus utama karena paling sering dibutuhkan untuk kebutuhan digital, visual, dan pendampingan akademik yang terarah."
+          title="Fokus layanan utama"
+          description="Beberapa layanan berikut menjadi prioritas karena paling sering diminta untuk kebutuhan website, visual, dokumen, dan pendampingan akademik yang lebih rapi."
         />
 
         <div className="space-y-6">

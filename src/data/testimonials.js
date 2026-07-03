@@ -1,29 +1,32 @@
 export const testimonials = [
   {
-    quote: 'Komunikasinya enak, hasilnya juga rapi sesuai arahan.',
-    name: 'Mahasiswa',
-    role: 'Pendampingan akademik',
-  },
-  {
-    quote: 'Website sederhana untuk usaha saya jadi lebih cepat selesai.',
-    name: 'Pelaku Usaha',
-    role: 'Project digital',
+    quote:
+      'Sangat terbantu dengan pengerjaan skripsi saya. Penjelasannya jelas dan revisinya juga rapi.',
+    name: 'Siska Amelia',
+    role: 'Mahasiswi Manajemen',
   },
   {
     quote:
-      'Bantu banget buat rapihin dokumen dan format yang sebelumnya berantakan.',
-    name: 'Mahasiswa Akhir',
-    role: 'Perapian dokumen',
+      'Landing page bisnis saya jadi jauh lebih cepat selesai dan tampilannya lebih profesional.',
+    name: 'Budi Santoso',
+    role: 'Owner Usaha Digital',
   },
   {
-    quote: 'Desain feed dan videonya sesuai brief, revisinya juga jelas.',
-    name: 'Content Creator',
-    role: 'Layanan kreatif',
+    quote:
+      'Bantu banget untuk merapikan dokumen dan struktur presentasi yang sebelumnya masih berantakan.',
+    name: 'Arif Rahman',
+    role: 'Mahasiswa Sistem Informasi',
   },
   {
-    quote: 'Bisa konsultasi dulu, jadi lebih enak sebelum mulai pengerjaan.',
-    name: 'Pekerja',
-    role: 'Support proyek',
+    quote:
+      'Desain feed dan videonya sesuai brief, revisinya mudah dipahami, dan komunikasi admin enak.',
+    name: 'Rina Maharani',
+    role: 'Content & UMKM Owner',
+  },
+  {
+    quote:
+      'Bisa konsultasi dulu sebelum mulai. Itu bikin saya lebih tenang karena ruang lingkupnya jadi jelas.',
+    name: 'Dr. Hendra',
+    role: 'Dosen Peneliti',
   },
 ];
-

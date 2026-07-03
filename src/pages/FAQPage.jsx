@@ -19,8 +19,9 @@ export default function FAQPage() {
         description="Jika masih ada pertanyaan lain, kamu bisa langsung hubungi kami melalui form kontak atau WhatsApp agar kebutuhanmu dicek lebih spesifik."
         primaryAction={{ to: '/kontak', label: 'Hubungi Tim' }}
         secondaryAction={{ to: '/cara-order', label: 'Lihat Cara Order' }}
+        highlights={['Privasi', 'Revisi', 'Deadline']}
       />
-      <FAQ />
+      <FAQ variant="page" />
       <ContactForm />
       <CTASection />
     </>

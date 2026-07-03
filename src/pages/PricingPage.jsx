@@ -20,6 +20,7 @@ export default function PricingPage() {
         description="Tidak semua project punya ruang lingkup yang sama. Karena itu, harga akan menyesuaikan tingkat kesulitan, deadline, revisi, dan detail teknis yang diberikan."
         primaryAction={{ to: '/kontak', label: 'Konsultasi Harga' }}
         secondaryAction={{ to: '/layanan', label: 'Lihat Layanan' }}
+        highlights={['Estimasi Awal', 'Faktor Teknis', 'Brief yang Jelas']}
       />
       <Pricing />
       <Portfolio />

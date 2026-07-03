@@ -18,6 +18,7 @@ export default function ContactPage() {
         description="Kirim detail kebutuhan, deadline, dan arahan yang sudah ada. Tim JasaJoki.id akan membantu mengecek ruang lingkup serta estimasi pengerjaannya."
         primaryAction={{ to: '/layanan', label: 'Lihat Layanan' }}
         secondaryAction={{ to: '/harga', label: 'Cek Harga Fleksibel' }}
+        highlights={['WhatsApp Cepat', 'Form Terstruktur', 'Privasi Dijaga']}
       />
       <ContactForm />
       <CTASection />

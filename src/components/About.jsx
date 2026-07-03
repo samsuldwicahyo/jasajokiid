@@ -21,7 +21,7 @@ const values = [
 
 export default function About() {
   return (
-    <section id="tentang" className="section-anchor py-20 sm:py-24">
+    <section id="tentang" className="section-anchor bg-white py-20 sm:py-24">
       <div className="section-shell">
         <div className="grid items-center gap-12 lg:grid-cols-[0.95fr_1.05fr]">
           <motion.div
@@ -32,17 +32,17 @@ export default function About() {
           >
             <SectionHeader
               eyebrow="Tentang Kami"
-              title="Tentang JasaJoki.id"
-              description="JasaJoki.id adalah layanan bantuan digital dan pendampingan akademik yang membantu pelajar, mahasiswa, pekerja, dan pelaku usaha dalam menyelesaikan kebutuhan proyek secara lebih terarah, rapi, dan profesional."
+              title="Lebih dari sekadar bantuan pengerjaan"
+              description="JasaJoki.id diposisikan sebagai layanan konsultatif dan support project yang membantu mahasiswa, pekerja, dan pelaku usaha menyelesaikan kebutuhan digital maupun akademik secara lebih profesional."
               align="left"
             />
             <div className="space-y-5 text-base leading-8 text-brand-soft">
               <p>
                 Kami menyediakan layanan pembuatan website, aplikasi, desain grafis, editing
-                video, animasi, perapian dokumen, konsultasi jurnal, pendampingan skripsi,
-                makalah, artikel, serta kebutuhan proyek lainnya sesuai arahan klien.
+                video, perapian dokumen, konsultasi jurnal, pendampingan skripsi, makalah,
+                artikel, dan kebutuhan proyek lain yang masih relevan dengan brief klien.
               </p>
-              <p>Setiap layanan disesuaikan berdasarkan:</p>
+              <p>Setiap layanan disesuaikan berdasarkan faktor berikut:</p>
             </div>
 
             <div className="mt-6 grid gap-3 sm:grid-cols-2">
@@ -71,8 +71,8 @@ export default function About() {
             transition={{ duration: 0.5 }}
             className="relative"
           >
-            <div className="gradient-border">
-              <div className="relative overflow-hidden rounded-[2rem] bg-white/90 p-4 sm:p-5">
+            <div className="rounded-[2rem] border border-brand-border bg-slate-50 p-4 shadow-card sm:p-5">
+              <div className="relative overflow-hidden rounded-[1.6rem] bg-white/90 p-4 sm:p-5">
                 <img
                   src={teamIllustration}
                   alt="Ilustrasi tim digital JasaJoki.id yang sedang berkolaborasi"
