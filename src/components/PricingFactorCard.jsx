@@ -4,8 +4,8 @@ export default function PricingFactorCard({ icon: Icon, title, description }) {
   return (
     <motion.article
       whileHover={{ y: -4 }}
-      transition={{ duration: 0.2 }}
-      className="rounded-[1.75rem] border border-brand-border bg-white/90 p-6 shadow-card"
+      transition={{ duration: 0.2, ease: [0.4, 0, 0.2, 1] }}
+      className="rounded-[1.75rem] border border-brand-border bg-white/90 p-6 shadow-card transition duration-300 ease-[cubic-bezier(0.4,0,0.2,1)] hover:shadow-xl"
     >
       <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-brand-navy/[0.08] text-brand-navy">
         <Icon className="h-5 w-5" aria-hidden="true" />

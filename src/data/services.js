@@ -36,7 +36,7 @@ export const heroStats = [
   { value: '1000+', label: 'Proyek Selesai' },
   { value: '500+', label: 'Klien Puas' },
   { value: '99%', label: 'Tepat Waktu' },
-  { value: 'Fast Response', label: 'Konsultasi Awal' },
+  { value: 'Respon Cepat', label: 'Konsultasi Awal' },
 ];
 
 export const audienceProblems = [
@@ -88,13 +88,13 @@ export const services = [
   {
     title: 'Pembuatan Aplikasi',
     description:
-      'Support pembuatan aplikasi berbasis web atau mobile sesuai kebutuhan, flow, dan fitur yang diperlukan.',
+      'Dukungan pembuatan aplikasi berbasis web atau mobile sesuai kebutuhan, flow, dan fitur yang diperlukan.',
     icon: Code2,
   },
   {
     title: 'Pendampingan Skripsi',
     description:
-      'Bantu arahan, struktur, perapian format, konsultasi alur, dan support teknis dokumen skripsi sesuai ketentuan.',
+      'Bantu arahan, struktur, perapian format, konsultasi alur, dan dukungan teknis dokumen skripsi sesuai ketentuan.',
     icon: GraduationCap,
   },
   {
@@ -106,7 +106,7 @@ export const services = [
   {
     title: 'Konsultasi Jurnal',
     description:
-      'Support pencarian arah pembahasan, struktur artikel, format jurnal, dan perapian dokumen.',
+      'Dukungan pencarian arah pembahasan, struktur artikel, format jurnal, dan perapian dokumen.',
     icon: BookOpen,
   },
   {
@@ -124,7 +124,7 @@ export const services = [
   {
     title: 'Animasi 2D/3D',
     description:
-      'Support animasi sederhana untuk presentasi, konten edukasi, promosi, dan kebutuhan visual kreatif.',
+      'Dukungan animasi sederhana untuk presentasi, konten edukasi, promosi, dan kebutuhan visual kreatif.',
     icon: Sparkles,
   },
   {
@@ -151,28 +151,28 @@ export const featuredServices = [
   {
     title: 'Pembuatan Website',
     description:
-      'Cocok untuk brand, usaha, portfolio pribadi, atau campaign digital yang perlu tampil rapi, cepat diakses, dan mudah dipresentasikan.',
+      'Cocok untuk brand, usaha, portofolio pribadi, atau campaign digital yang perlu tampil rapi, cepat diakses, dan mudah dipresentasikan.',
     icon: Globe,
     features: [
-      'Landing page',
-      'Company profile',
-      'Portfolio',
+      'Halaman landing',
+      'Profil perusahaan',
+      'Portofolio',
       'Website bisnis',
       'Website promosi',
-      'Responsive mobile',
+      'Responsif mobile',
     ],
   },
   {
     title: 'Pendampingan Skripsi',
     description:
-      'Fokus pada struktur, formatting, arahan bab, dan support teknis dokumen agar proses pengerjaan lebih terarah dan siap direview.',
+      'Fokus pada struktur, formatting, arahan bab, dan dukungan teknis dokumen agar proses pengerjaan lebih terarah dan siap direview.',
     icon: GraduationCap,
     features: [
       'Konsultasi struktur',
       'Perapian format',
       'Arahan bab',
       'Editing dokumen',
-      'Support referensi',
+      'Referensi yang didukung',
       'Revisi sesuai arahan',
     ],
   },
@@ -207,12 +207,12 @@ export const featuredServices = [
   {
     title: 'Pembuatan Aplikasi',
     description:
-      'Support pengembangan aplikasi sederhana dengan alur yang jelas, tampilan bersih, dan dokumentasi penggunaan yang mudah dipahami.',
+      'Dukungan pengembangan aplikasi sederhana dengan alur yang jelas, tampilan bersih, dan dokumentasi penggunaan yang mudah dipahami.',
     icon: Code2,
     features: [
-      'Web app',
+      'Aplikasi Web',
       'Dashboard sederhana',
-      'UI flow',
+      'Alur UI',
       'Fitur dasar',
       'Integrasi sederhana',
       'Dokumentasi penggunaan',
@@ -312,7 +312,7 @@ export const orderSteps = [
 export const pricingFactors = [
   {
     title: 'Jenis layanan',
-    description: 'Website, aplikasi, desain, video, dokumen, atau support proyek.',
+    description: 'Website, aplikasi, desain, video, dokumen, atau dukungan proyek.',
     icon: Layers3,
   },
   {
@@ -352,49 +352,49 @@ export const portfolioItems = [
     title: 'Website Company Profile',
     category: 'Website',
     description: 'Landing page profesional untuk usaha, profil tim, dan informasi layanan.',
-    badge: 'Business Web',
+    badge: 'Web Bisnis',
   },
   {
     title: 'Landing Page Produk',
     category: 'Digital Campaign',
     description: 'Halaman promosi yang fokus pada CTA, copy, dan tampilan visual.',
-    badge: 'Conversion Ready',
+    badge: 'Siap Konversi',
   },
   {
     title: 'Desain Feed Instagram',
     category: 'Desain',
     description: 'Visual feed yang konsisten untuk promosi, edukasi, atau branding.',
-    badge: 'Social Content',
+    badge: 'Konten Sosial',
   },
   {
     title: 'Perapian Dokumen Skripsi',
     category: 'Akademik',
-    description: 'Formatting bab, daftar isi, referensi, dan layout dokumen agar lebih rapi.',
-    badge: 'Academic Support',
+    description: 'Penataan bab, daftar isi, referensi, dan layout dokumen agar lebih rapi.',
+    badge: 'Dukungan Akademik',
   },
   {
     title: 'Editing Video Reels',
     category: 'Video',
     description: 'Edit konten pendek yang ringkas, ritmis, dan sesuai brief.',
-    badge: 'Short Form',
+    badge: 'Video Pendek',
   },
   {
     title: 'Presentasi Profesional',
     category: 'Presentasi',
     description: 'Slide deck bersih untuk kelas, pitching, atau kebutuhan internal.',
-    badge: 'Presentation',
+    badge: 'Presentasi',
   },
   {
     title: 'Makalah Terstruktur',
     category: 'Dokumen',
     description: 'Penyusunan alur penulisan, perapian format, dan layout dokumen.',
-    badge: 'Structured Writing',
+    badge: 'Penulisan Terstruktur',
   },
   {
     title: 'Dashboard Aplikasi Sederhana',
     category: 'Aplikasi',
     description: 'Konsep dashboard untuk monitoring data, workflow, atau admin panel ringan.',
-    badge: 'Web App',
+    badge: 'Aplikasi Web',
   },
 ];
 

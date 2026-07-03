@@ -7,9 +7,9 @@ import Testimonials from '../components/Testimonials';
 import WhyChooseUs from '../components/WhyChooseUs';
 
 const description =
-  'Lihat layanan JasaJoki.id untuk website, aplikasi, desain grafis, editing video, dokumen akademik, dan support proyek digital yang fleksibel.';
+  'Lihat layanan JasaJoki.id untuk website, aplikasi, desain grafis, editing video, dokumen akademik, dan dukungan proyek digital yang fleksibel.';
 const keywords =
-  'layanan jasa website, layanan desain grafis, editing video, pendampingan akademik, support proyek digital';
+  'layanan jasa website, layanan desain grafis, editing video, pendampingan akademik, dukungan proyek digital';
 
 export default function ServicesPage() {
   return (
@@ -18,7 +18,7 @@ export default function ServicesPage() {
       <PageHero
         eyebrow="Halaman Layanan"
         title="Layanan profesional yang rapi, fleksibel, dan sesuai arahan"
-        description="Mulai dari pengembangan website dan aplikasi, desain visual, editing video, hingga pendampingan akademik yang berfokus pada arahan, struktur, dan support teknis."
+        description="Mulai dari pengembangan website dan aplikasi, desain visual, editing video, hingga pendampingan akademik yang berfokus pada arahan, struktur, dan dukungan teknis."
         primaryAction={{ to: '/kontak', label: 'Konsultasi Sekarang' }}
         secondaryAction={{ to: '/harga', label: 'Lihat Sistem Harga' }}
         highlights={['Website & Aplikasi', 'Dokumen Akademik', 'Desain & Multimedia']}

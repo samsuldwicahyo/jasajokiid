@@ -4,7 +4,7 @@ import PageHero from '../components/PageHero';
 import SEO from '../components/SEO';
 
 const description =
-  'Hubungi JasaJoki.id untuk konsultasi kebutuhan website, aplikasi, desain, video, dokumen akademik, dan support proyek digital.';
+  'Hubungi JasaJoki.id untuk konsultasi kebutuhan website, aplikasi, desain, video, dokumen akademik, dan dukungan proyek digital.';
 const keywords =
   'kontak jasa website, konsultasi whatsapp, contact jasa desain, layanan bantuan digital';
 

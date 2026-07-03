@@ -6,10 +6,10 @@ export default function ServiceCard({ icon: Icon, title, description }) {
   return (
     <motion.article
       whileHover={{ y: -6 }}
-      transition={{ duration: 0.24 }}
+      transition={{ duration: 0.24, ease: [0.4, 0, 0.2, 1] }}
       className="group h-full"
     >
-      <div className="flex h-full flex-col rounded-[1.9rem] border border-brand-border bg-white p-7 shadow-card transition duration-300 group-hover:-translate-y-1 group-hover:border-brand-blue/40">
+      <div className="flex h-full flex-col rounded-[1.9rem] border border-brand-border bg-white p-7 shadow-card transition duration-300 ease-[cubic-bezier(0.4,0,0.2,1)] group-hover:-translate-y-1 group-hover:border-brand-blue/40 group-hover:shadow-xl">
         <div className="mb-5 inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-brand-navy text-white shadow-card transition duration-300 group-hover:bg-brand-blue">
             <Icon className="h-6 w-6" aria-hidden="true" />
         </div>

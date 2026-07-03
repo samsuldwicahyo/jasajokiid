@@ -9,7 +9,7 @@ export default function Testimonials() {
         <SectionHeader
           eyebrow="Testimoni"
           title="Apa Kata Mereka?"
-          description="Beberapa testimoni berikut disusun secara natural untuk menggambarkan pengalaman konsultasi dan support proyek yang rapi."
+          description="Beberapa testimoni berikut disusun secara natural untuk menggambarkan pengalaman konsultasi dan dukungan proyek yang rapi."
         />
         <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
           {testimonials.map((testimonial) => (

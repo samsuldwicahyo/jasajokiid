@@ -2,9 +2,9 @@ import { Home, LayoutGrid, MessageCircle, ShoppingCart } from 'lucide-react';
 import { NavLink } from 'react-router-dom';
 
 const items = [
-  { label: 'Home', to: '/', icon: Home },
+  { label: 'Beranda', to: '/', icon: Home },
   { label: 'Layanan', to: '/layanan', icon: LayoutGrid },
-  { label: 'Order', to: '/cara-order', icon: ShoppingCart },
+  { label: 'Pesan', to: '/cara-order', icon: ShoppingCart },
   { label: 'Kontak', to: '/kontak', icon: MessageCircle },
 ];
 
@@ -19,7 +19,7 @@ export default function MobileBottomNav() {
             end={item.to === '/'}
             className={({ isActive }) =>
               [
-                'flex min-w-[72px] flex-col items-center justify-center rounded-xl px-3 py-2 text-[10px] font-semibold transition',
+                'flex min-w-[72px] flex-col items-center justify-center rounded-xl px-3 py-2 text-[10px] font-semibold transition duration-200 ease-[cubic-bezier(0.4,0,0.2,1)]',
                 isActive
                   ? 'bg-brand-blue/12 text-brand-navy'
                   : 'text-brand-soft hover:bg-slate-100 hover:text-brand-text',

@@ -44,7 +44,7 @@ export default function Button({
   ...props
 }) {
   const classes = joinClasses(
-    'inline-flex items-center justify-center gap-2 rounded-xl font-semibold tracking-[-0.01em] transition duration-200',
+    'inline-flex items-center justify-center gap-2 rounded-xl font-semibold tracking-[-0.01em] transition duration-200 ease-[cubic-bezier(0.4,0,0.2,1)]',
     variants[variant],
     sizes[size],
     fullWidth ? 'w-full' : '',
@@ -52,8 +52,9 @@ export default function Button({
   );
 
   const motionProps = {
-    whileHover: { y: -2 },
-    whileTap: { scale: 0.98 },
+    whileHover: { y: -2, scale: 1.02 },
+    whileTap: { scale: 0.97 },
+    transition: { duration: 0.22, ease: [0.4, 0, 0.2, 1] },
   };
 
   if (to) {

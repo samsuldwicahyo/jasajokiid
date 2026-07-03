@@ -33,7 +33,7 @@ export default function About() {
             <SectionHeader
               eyebrow="Tentang Kami"
               title="Lebih dari sekadar bantuan pengerjaan"
-              description="JasaJoki.id diposisikan sebagai layanan konsultatif dan support project yang membantu mahasiswa, pekerja, dan pelaku usaha menyelesaikan kebutuhan digital maupun akademik secara lebih profesional."
+              description="JasaJoki.id diposisikan sebagai layanan konsultatif dan dukungan proyek yang membantu mahasiswa, pekerja, dan pelaku usaha menyelesaikan kebutuhan digital maupun akademik secara lebih profesional."
               align="left"
             />
             <div className="space-y-5 text-base leading-8 text-brand-soft">

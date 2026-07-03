@@ -84,12 +84,12 @@ export default function Hero() {
               <div className="mb-6 flex items-center justify-between">
                 <div>
                   <div className="text-sm font-semibold uppercase tracking-[0.2em] text-brand-blue">
-                    Project Support
+                    Dukungan Proyek
                   </div>
                   <div className="mt-2 text-xl font-bold text-brand-text">Dashboard Konsultasi</div>
                 </div>
                 <div className="rounded-full bg-emerald-50 px-4 py-2 text-xs font-semibold text-emerald-700">
-                  Fast Response
+                  Respon Cepat
                 </div>
               </div>
 
@@ -100,7 +100,7 @@ export default function Hero() {
                       <Laptop className="h-5 w-5" />
                     </div>
                     <div>
-                      <div className="font-semibold">Website & Digital Support</div>
+                      <div className="font-semibold">Website & Dukungan Digital</div>
                       <div className="text-sm text-slate-300">Rapi, fleksibel, dan sesuai brief</div>
                     </div>
                   </div>
@@ -108,7 +108,7 @@ export default function Hero() {
                     <div className="rounded-2xl bg-white/[0.08] p-4">
                       <div className="flex items-center justify-between text-sm">
                         <span>Landing page bisnis</span>
-                        <span className="text-emerald-300">Ready</span>
+                        <span className="text-emerald-300">Siap</span>
                       </div>
                       <div className="mt-3 h-2 rounded-full bg-white/10">
                         <div className="h-2 w-4/5 rounded-full bg-brand-blue" />
@@ -116,7 +116,7 @@ export default function Hero() {
                     </div>
                     <div className="rounded-2xl bg-white/[0.08] p-4">
                       <div className="flex items-center justify-between text-sm">
-                        <span>Support dokumen akademik</span>
+                        <span>Dukungan dokumen akademik</span>
                         <span className="text-amber-300">Review</span>
                       </div>
                       <div className="mt-3 h-2 rounded-full bg-white/10">
@@ -169,7 +169,7 @@ export default function Hero() {
               <div className="mt-4 grid gap-4 sm:grid-cols-2">
                 <div className="rounded-[1.4rem] border border-brand-border bg-white p-5 shadow-sm">
                   <div className="text-sm font-semibold uppercase tracking-[0.2em] text-brand-blue">
-                    Support
+                    Dukungan
                   </div>
                   <div className="mt-2 text-lg font-bold text-brand-text">Editing & Formatting</div>
                   <p className="mt-2 text-sm leading-7 text-brand-soft">
@@ -178,9 +178,9 @@ export default function Hero() {
                 </div>
                 <div className="rounded-[1.4rem] border border-brand-border bg-white p-5 shadow-sm">
                   <div className="text-sm font-semibold uppercase tracking-[0.2em] text-brand-accent">
-                    Badge
+                    Fitur
                   </div>
-                  <div className="mt-2 text-lg font-bold text-brand-text">Project Support</div>
+                  <div className="mt-2 text-lg font-bold text-brand-text">Dukungan Proyek</div>
                   <p className="mt-2 text-sm leading-7 text-brand-soft">
                     Pendekatan fleksibel untuk kebutuhan digital, kreatif, dan pendampingan akademik.
                   </p>
@@ -193,7 +193,7 @@ export default function Hero() {
               transition={{ duration: 4.8, repeat: Infinity, ease: 'easeInOut' }}
               className="absolute -top-4 right-6 rounded-full border border-brand-border bg-white px-4 py-2 text-sm font-semibold text-brand-navy shadow-card"
             >
-              Fast Response
+              Respon Cepat
             </motion.div>
 
             <motion.div
@@ -201,7 +201,7 @@ export default function Hero() {
               transition={{ duration: 5.2, repeat: Infinity, ease: 'easeInOut' }}
               className="absolute -bottom-4 left-6 rounded-full border border-brand-border bg-white px-4 py-2 text-sm font-semibold text-brand-blue shadow-card"
             >
-              Project Support
+              Dukungan Proyek
             </motion.div>
           </motion.div>
         </div>

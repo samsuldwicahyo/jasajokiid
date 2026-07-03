@@ -10,7 +10,7 @@ export default function FAQItem({ item, index, isOpen, onToggle }) {
       <button
         id={buttonId}
         type="button"
-        className="flex w-full items-center justify-between gap-4 px-5 py-5 text-left sm:px-6"
+        className="flex w-full items-center justify-between gap-4 px-5 py-5 text-left transition duration-200 ease-[cubic-bezier(0.4,0,0.2,1)] hover:bg-slate-50 sm:px-6"
         aria-expanded={isOpen}
         aria-controls={panelId}
         onClick={onToggle}

@@ -34,7 +34,7 @@ export default function Footer() {
             />
             <p className="mt-5 max-w-md text-sm leading-8 text-slate-300">
               Layanan bantuan digital dan pendampingan akademik profesional untuk kebutuhan
-              website, aplikasi, desain, video, dokumen, dan support proyek yang lebih terarah.
+              website, aplikasi, desain, video, dokumen, dan dukungan proyek yang lebih terarah.
             </p>
           </div>
 

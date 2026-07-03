@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { Instagram, Mail, MessageCircle, ShieldCheck } from 'lucide-react';
+import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { serviceOptions } from '../data/services';
 import {
@@ -30,6 +31,7 @@ const contactInfo = [
 ];
 
 export default function ContactForm() {
+  const [submitting, setSubmitting] = useState(false);
   const {
     register,
     handleSubmit,
@@ -47,8 +49,10 @@ export default function ContactForm() {
   });
 
   const onSubmit = (values) => {
+    setSubmitting(true);
     window.open(buildContactMessage(values), '_blank', 'noopener,noreferrer');
     reset();
+    window.setTimeout(() => setSubmitting(false), 300);
   };
 
   return (
@@ -140,7 +144,7 @@ export default function ContactForm() {
                     id="contact-name"
                     type="text"
                     placeholder="Nama lengkap"
-                    className="w-full rounded-2xl border border-brand-border px-4 py-3 text-sm"
+                    className="w-full rounded-2xl border border-brand-border px-4 py-3 text-sm transition duration-200 ease-[cubic-bezier(0.4,0,0.2,1)] focus:border-brand-blue focus:ring-2 focus:ring-brand-blue/10"
                     {...register('name', { required: 'Nama wajib diisi.' })}
                   />
                   {errors.name ? <p className="mt-2 text-sm text-red-600">{errors.name.message}</p> : null}
@@ -154,7 +158,7 @@ export default function ContactForm() {
                     id="contact-phone"
                     type="text"
                     placeholder="08xxxxxxxxxx"
-                    className="w-full rounded-2xl border border-brand-border px-4 py-3 text-sm"
+                    className="w-full rounded-2xl border border-brand-border px-4 py-3 text-sm transition duration-200 ease-[cubic-bezier(0.4,0,0.2,1)] focus:border-brand-blue focus:ring-2 focus:ring-brand-blue/10"
                     {...register('phone')}
                   />
                 </div>
@@ -166,7 +170,7 @@ export default function ContactForm() {
                 </label>
                 <select
                   id="contact-service"
-                  className="w-full rounded-2xl border border-brand-border px-4 py-3 text-sm"
+                  className="w-full rounded-2xl border border-brand-border px-4 py-3 text-sm transition duration-200 ease-[cubic-bezier(0.4,0,0.2,1)] focus:border-brand-blue focus:ring-2 focus:ring-brand-blue/10"
                   {...register('service', { required: 'Layanan wajib dipilih.' })}
                 >
                   <option value="">Pilih layanan</option>
@@ -189,7 +193,7 @@ export default function ContactForm() {
                   <input
                     id="contact-deadline"
                     type="date"
-                    className="w-full rounded-2xl border border-brand-border px-4 py-3 text-sm"
+                    className="w-full rounded-2xl border border-brand-border px-4 py-3 text-sm transition duration-200 ease-[cubic-bezier(0.4,0,0.2,1)] focus:border-brand-blue focus:ring-2 focus:ring-brand-blue/10"
                     {...register('deadline')}
                   />
                 </div>
@@ -202,7 +206,7 @@ export default function ContactForm() {
                     id="contact-budget"
                     type="text"
                     placeholder="Opsional"
-                    className="w-full rounded-2xl border border-brand-border px-4 py-3 text-sm"
+                    className="w-full rounded-2xl border border-brand-border px-4 py-3 text-sm transition duration-200 ease-[cubic-bezier(0.4,0,0.2,1)] focus:border-brand-blue focus:ring-2 focus:ring-brand-blue/10"
                     {...register('budget')}
                   />
                 </div>
@@ -216,7 +220,7 @@ export default function ContactForm() {
                   id="contact-details"
                   rows="6"
                   placeholder="Tuliskan kebutuhan, format, file, atau arahan pengerjaan yang sudah ada"
-                  className="w-full rounded-2xl border border-brand-border px-4 py-3 text-sm"
+                  className="w-full rounded-2xl border border-brand-border px-4 py-3 text-sm transition duration-200 ease-[cubic-bezier(0.4,0,0.2,1)] focus:border-brand-blue focus:ring-2 focus:ring-brand-blue/10"
                   {...register('details', { required: 'Detail kebutuhan wajib diisi.' })}
                 />
                 {errors.details ? (
@@ -226,11 +230,13 @@ export default function ContactForm() {
 
               <button
                 type="submit"
-                className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-brand-blue px-5 py-4 text-sm font-semibold text-white shadow-card transition hover:bg-sky-500"
+                className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-brand-blue px-5 py-4 text-sm font-semibold text-white shadow-card transition duration-200 ease-[cubic-bezier(0.4,0,0.2,1)] hover:bg-sky-500 disabled:cursor-not-allowed disabled:opacity-60"
                 aria-label="Kirim form konsultasi"
+                disabled={submitting}
+                aria-busy={submitting}
               >
                 <MessageCircle className="h-4 w-4" aria-hidden="true" />
-                Kirim Konsultasi via WhatsApp
+                {submitting ? 'Mengirim...' : 'Kirim Konsultasi via WhatsApp'}
               </button>
             </form>
           </motion.div>

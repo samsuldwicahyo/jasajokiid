@@ -56,7 +56,7 @@ export default function CTASection() {
               {[
                 { label: 'Chat Konsultasi', icon: MessageCircle },
                 { label: 'Dokumen Rapi', icon: FileText },
-                { label: 'Support Digital', icon: Laptop },
+                { label: 'Dukungan Digital', icon: Laptop },
                 { label: 'Arahan Jelas', icon: MessageCircle },
               ].map((item) => (
                 <div

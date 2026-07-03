@@ -8,7 +8,7 @@ import WhyChooseUs from '../components/WhyChooseUs';
 const description =
   'Pelajari alur order di JasaJoki.id mulai dari konsultasi awal, pengecekan kebutuhan, estimasi harga, hingga review dan revisi.';
 const keywords =
-  'cara order jasa digital, konsultasi whatsapp, alur pemesanan jasa website, support proyek akademik';
+  'cara order jasa digital, konsultasi whatsapp, alur pemesanan jasa website, dukungan proyek akademik';
 
 export default function HowToOrderPage() {
   return (
